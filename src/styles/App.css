@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    background: #373737;
+    box-sizing: border-box;
+    color: aliceblue;
+}
+
+
+ .list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+ }
+.listItem{
+    display: flex;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.listItem button{
+    border: 1px solid #f9f6f6;
+    font-size: 20px;
+    padding: 5px 10px ;
+    background-color: transparent;
+    cursor: pointer;
+}
+.App{
+    width: 800px;
+}
