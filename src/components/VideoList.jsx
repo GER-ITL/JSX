@@ -18,6 +18,7 @@ const videos = [
 export function VideoList(){
     return(
         <>
+        
           <h1>Video List</h1>
             {videos.map((video)=> {
                 return(

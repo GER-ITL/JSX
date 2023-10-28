@@ -1,14 +1,29 @@
-import { VideoList } from "./components/VideoList";
-import './styles/App.css'
+// import { useMemo } from "react";
+import { useState } from "react";
+import { cars as carsData } from "./cars-data.js";
+import CreateCarForm from "./components/create-car-form/CreateCarForm.jsx";
+import CarsItem from "./components/ui/CarsItem.jsx";
+import "./styles/App.css";
+
 function App() {
+ // const [filter, setFilter] = useState('')
+//const filteredCars = useMemo(() => cars.filter(car => car.price > 150000), [filter]) 
+  const[cars, setCars] = useState(carsData)
+
   return (
     <>
-    <div className="list">
-    <h1>Hello jsx</h1>
-    <VideoList/>
-    </div>
+      <div>
+        <h1>Cars Catalog</h1>
+        <CreateCarForm setCars = {setCars}/>
+        <div>
+          {cars.length ? cars.map((car) => (
+              <CarsItem key={car.id} car={car}/>
+          ))
+        : <p>There are no car</p>
+        }
+        </div>
+      </div>
     </>
-
   );
 }
 

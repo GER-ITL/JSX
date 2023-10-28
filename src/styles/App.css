@@ -1,31 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+
+
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
     background: #373737;
     box-sizing: border-box;
-    color: aliceblue;
+    color: rgb(229, 240, 250);
+    padding: 30px 20px;
 }
-
-
- .list{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
- }
-.listItem{
-    display: flex;
-    margin-bottom: 20px;
-    font-size: 20px;
+.car-item{
+    margin-bottom: 30px;
+    border: 1px solid #ffecec;
+    
 }
-.listItem button{
-    border: 1px solid #f9f6f6;
-    font-size: 20px;
-    padding: 5px 10px ;
-    background-color: transparent;
+.car-image{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    height: 200px;
+}
+.car-info{
+    line-height: 30px;
+    padding: 10px;
+}
+.car-btn{
+    padding: 10px 15px;
+    background: transparent;
+    color: rgb(229, 240, 250);
+    border: 1px solid #ffecec;
     cursor: pointer;
+    transition: 1s all; 
+    border-radius: 10px;   
 }
-.App{
-    width: 800px;
+.car-btn:hover{
+    background: rgb(229, 240, 250);
+    color: #373737;
+    box-shadow: 1px 1px 10px #ffecec  ;
+}
+h1{
+    margin-bottom: 10px;
+}
+.btn{
+    padding: 10px 15px;
+    background: rgb(229, 240, 250);
+    font-size: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn:hover{
+    background: #8eb4da;
 }
