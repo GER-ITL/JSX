@@ -3,7 +3,7 @@ import { useState } from "react";
 import { cars as carsData } from "./cars-data.js";
 import CreateCarForm from "./components/create-car-form/CreateCarForm.jsx";
 import CarsItem from "./components/ui/CarsItem.jsx";
-import "./styles/App.css";
+import "./styles/App.scss";
 
 function App() {
  // const [filter, setFilter] = useState('')
